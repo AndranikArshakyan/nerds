@@ -5,120 +5,134 @@
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="style.css">
     <title>Интернет-магазин Nerds.</title>
   </head>
   <body>
+
     <header class="main-header">
-      <nav>
-        <a href="#"><img src="/img/main-logo.png" width="160" height="65" alt="Главный логотип"></a>
-        <ul>
+      <nav class="main-navigation">
+        <div clas="main-header-logo">
+          <a href="#">
+            <img src="/img/main-logo.png" width="160" height="65" alt="Главный логотип">
+          </a>
+        </div>
+
+        <ul class="site-navigation">
           <li><a href="#">Студия</a></li>
           <li><a href="#">Клиенты</a></li>
           <li><a href="catalog.html">Магазин</a></li>
           <li><a href="#">Контакты</a></li>
         </ul>
-        <a href="#">Корзина</a>
+        <div class="cart">
+          <a href="#">Корзина</a>
+        </div>
       </nav>
     </header>
-    <main>
+    <main class="container">
       <h1>Интернет-магазин Nerds</h1>
 
-      <section class="preferences">
+      <section class="slider">
+        <div class="slider-item">
+          <p class="slider-item-header">
+            Долго, дорого,<br>
+            скурпулезно.</p>
+          <p>
+            Математически выверенный дизайн для вашего сайта или мобильного приложения.
+          </p>
+        <a class="button button-red" href="#">Узнать больше</a>
+        </div>
 
-          <p>Долго, дорого, скурпулезно.</p>
-          <p>Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
-          <a href="#">Узнать больше</a>
-          <img src="https://via.placeholder.com/760x431" width="760" height="431" alt="Картинка со смартфонами">
+        <div class="slider-item">
+          <p class="slider-item-header">
+            Любим математику,<br>
+            как никто другой</p>
+          <p>
+            Никакого креатива, только математические формулы для расчета идеальных пропорций
+          </p>
+          <a class="button button-red" href="#">Узнать больше</a>
+        </div>
+
+        <div class="slider-item">
+          <p class="slider-item-header">
+            Только ночь,<br>
+            только хардкор</p>
+          <p>
+            Работать днем, как все? Мы против этого.
+            <br>Ближе к полуночи работа только начинается.</p>
+          <a class="button button-red" href="#">Узнать больше</a>
+        </div>
+
       </section>
 
-      <section class="preferences">
-
-        <p>Любим математику, как никто другой</p>
-        <p>Никакого креатива, только математические формулы для расчета идеальных пропорций</p>
-        <a href="#">Узнать больше</a>
-        <img src="https://via.placeholder.com/760x431" width="760" height="431" alt="Картинка с компьютерами">
-      </section>
-
-      <section class="preferences">
-
-          <p>Только ночь,<br>только хардкор</p>
-          <p>Работать днем, как все? Мы против этого.<br>Ближе к полуночи работа только начинается.</p>
-          <a href="#">Узнать больше</a>
-          <img src="https://via.placeholder.com/760x431" width="760" height="431" alt="Картинка с планшетами">
+      <section class="advantages">
+        <h2>Преимущества</h2>
+        <ul class="advantages-list">
+          <li class="advantages-item">
+            <h3 class="advantages-item-header">Веб-сайты</h3>
+            <p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
+            <a class="button button-red" href="#">Заказать</a>
+          </li>
+          <li class="advantages-item">
+            <h3 class="advantages-item-header">Приложения</h3>
+            <p>Покорите топ-10 приложений в AppStore и Google Play</p>
+            <a class="button button-green" href="#">Заказать</a>
+          </li>
+          <li class="advantages-item">
+            <h3 class="advantages-item-header">Презентации</h3>
+            <p>Вы даже не подозреваете, насколько вы изумительны!</p>
+            <a class="button button-yellow" href="#">Заказать</a>
+          </li>
+        </ul>
       </section>
 
       <section class="services">
         <h2>Услуги</h2>
-        <ul>
-          <li>
-            <img src="https://via.placeholder.com/300x146" width="300" height="146" alt="Картинка с ноутбуком">
-            <h3>Веб-сайты</h3>
-            <p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
-            <a href="#">Заказать</a>
-          </li>
-          <li>
-            <img src="https://via.placeholder.com/300x146" width="300" height="146" alt="Картинка со смартфонами">
-            <h3>Приложения</h3>
-            <p>Покорите топ-10 приложений в AppStore и Google Play</p>
-            <a href="#">Заказать</a>
-          </li>
-          <li>
-            <img src="https://via.placeholder.com/300x146" width="300" height="146" alt="Картинка с презентацией">
-            <h3>Презентации</h3>
-            <p>Вы даже не подозреваете, насколько вы изумительны!</p>
-            <a href="#">Заказать</a>
-          </li>
-        </ul>
-      </section>
-
-      <section class="about">
-        <h2>О нас</h2>
-        <p>Мы — маленькая, но гордая дизайн-студия из Краснодара.</p>
+        <p class="services-header">Мы — маленькая, но гордая дизайн-студия из Краснодара.</p>
         <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
-        <p>Выполняем заказы на разработку:</p>
-        <ul>
-          <li>Веб-сайтов любой сложности</li>
-          <li>Мобильных приложений для iOS и Android</li>
-          <li>Слайдшоу и видео для корпоративных презентаций</li>
+        <p class="services-subheader">Выполняем заказы на разработку:</p>
+        <ul class="services-list">
+          <li class="services-item">Веб-сайтов любой сложности</li>
+          <li class="services-item">Мобильных приложений для iOS и Android</li>
+          <li class="services-item">Слайдшоу и видео для корпоративных презентаций</li>
         </ul>
       </section>
 
-      <section>
-        <img src="https://via.placeholder.com/360x208" width="360" height="208" alt="Картинка с названием компании">
+      <section class="statistic">
         <table>
-          <caption>С 2004 года любим точность во всем</caption>
+          <caption class="statistic-header">С 2004 года любим точность во всем</caption>
           <tr>
-            <td>146<sup>%</sup></td>
-            <td>100<sup>%</sup></td>
-            <td>50<sup>%</sup></td>
+            <td class="statistic-numbers">146<sup>%</sup></td>
+            <td class="statistic-numbers">100<sup>%</sup></td>
+            <td class="statistic-numbers">50<sup>%</sup></td>
           </tr>
           <tr>
-            <td>Уровень самоотдачи</td>
-            <td>Соблюдение сроков</td>
-            <td>Минимальная предоплата</td>
+            <td class="statistic-description">Уровень самоотдачи</td>
+            <td class="statistic-description">Соблюдение сроков</td>
+            <td class="statistic-description">Минимальная предоплата</td>
           </tr>
         </table>
       </section>
 
-      <section class="">
+      <section class="partners">
         <h2>Партнеры</h2>
-        <ul>
-          <li>
+        <ul class="partners-list">
+          <li class="partners-item">
             <a href="#">
               <img src="/img/htmlacademy.png" width="199" height="57" alt="Лого html academy">
             </a>
-          </li>
-          <li>
+          <li class="partners-item">
             <a href="#">
               <img src="/img/borodinskiy.png" width="209" height="90" alt="Лого Барбершопа">
             </a>
           </li>
-          <li>
+          <li class="partners-item">
             <a href="#">
               <img src="/img/pink.png" width="185" height="52" alt="Лого Pink">
             </a>
           </li>
-          <li>
+          <li class="partners-item">
             <a href="#">
               <img src="/img/mishka.png" width="173" height="84" alt="Лого Mishka">
             </a>
@@ -126,30 +140,31 @@
         </ul>
       </section>
 
-      <section>
+      <section class="contacts">
         <h2>Контакты</h2>
-        <p>Nёrds design studio</p>
+        <p class="contacts-header">Nёrds design studio</p>
         <p>наб. реки Карповки<br>
         5 лит П, Санкт-Петербург</p>
-        <a href="tel:+78005558628">+7 899 555-86-28</a>
+        <a class="contacts-phone" href="tel:+78005558628">+7 899 555-86-28</a>
+        <a class="button button-red" href="#">Напишите нам</a>
       </section>
 
-      <section>
+      <section class="map">
         mack
       </section>
 
     </main>
 
     <footer class="main-footer">
-      <section>
+      <section class="social-media">
         <h2>Социальные сети</h2>
-        <ul>
-          <li><a href="#">VK</a></li>
-          <li><a href="#">FB</a></li>
-          <li><a href="#">INST</a></li>
+        <ul class="social-media-list">
+          <li class="social-media-item"><a href="#">VK</a></li>
+          <li class="social-media-item"><a href="#">FB</a></li>
+          <li class="social-media-item"><a href="#">INST</a></li>
         </ul>
-        <p>Давайте дружить, это выгодно!</p>
-        <p>Скидка 10% для друзей из социальных сетей.</p>
+        <p class="cta-header">Давайте дружить, это выгодно!</p>
+        <p class="cta-text">Скидка 10% для друзей из социальных сетей.</p>
       </section>
     </footer>
 

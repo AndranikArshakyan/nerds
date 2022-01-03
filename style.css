@@ -1,0 +1,240 @@
+/*add fonts*/
+
+
+@font-face {
+  font-family: "Roboto";
+  src:  local("Roboto"),
+        url("/fonts/roboto.woff2") format("woff2"),
+        url("/fonts/roboto.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Roboto Medium";
+  src:  local("Roboto Medium"),
+        url("/fonts/robotomedium.woff2") format("woff2"),
+        url("/fonts/robotomedium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Roboto Bold";
+  src:  local("Roboto Bold"),
+        url("/fonts/robotobold.woff2") format("woff2"),
+        url("/fonts/robotobold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+/*add main colors*/
+:root {
+  --soft-red:#FB565A;
+  --soft-red-dark: #E74246;
+  --soft-red-darknest: #D7373B;
+  --light-gray:#EEEEEE;
+  --lime-green:#00CA74;
+  --lime-green-dark:#00BC6C;
+  --lime-green-darknest: #00AA62;
+  --soft-yellow:#EFC849;
+  --soft-yellow-dark:#EAB534;
+  --soft-yellow-darknest:#E5A722;
+  --black: #000000;
+  --white: #FFFFFF;
+  --lead-grey: #666666;
+  --graylish-blue: #283136;
+}
+
+body {
+  min-width: 1440px;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", "Arial", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+a {
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+}
+.main-navigation{
+  font-size: 16px;
+  line-height: 30px;
+  color: black;
+  background-color: var(--light-gray);
+}
+.site-navigation,
+.partners-list,
+.social-media-list {
+  list-style: none;
+}
+.site-navigation a,
+.cart a,
+.product-sort-item a {
+  color:var(--black);
+}
+.site-navigation a:hover,
+.cart a:hover,
+.site-navigation a:focus,
+.cart a:focus {
+  color:var(--soft-red);
+}
+.site-navigation a:active,
+.cart a:active{
+  color:var(--black);
+  opacity: 0.3;
+}
+.slider {
+  background-color: var(--light-gray);
+}
+.slider-item-header{
+  font-size: 55px;
+  line-height: 55px;
+}
+.slider-item:first-child{
+  background: url("/img/slider1_back.png");
+}
+.slider-item:nth-child(2){
+  background: url("/img/slider2_back.png");
+}
+.slider-item:last-child{
+  background: url("/img/slider3_back.png");
+}
+li{
+  list-style: none;
+}
+.advantages-item-header{
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 700;
+}
+.button-red,
+.button-yellow,
+.button-green{
+  color:var(--white);
+}
+.button-grey{
+  color:var(--black);
+  background-color: var(--light-gray);
+}
+.button-green{
+  background-color: var(--lime-green);
+}
+.button-red{
+  background-color: var(--soft-red);
+}
+.button-yellow{
+  background-color: var(--soft-yellow);
+}
+.advantages-item:first-child{
+  background: url("/img/illustration-1\ 1.png") no-repeat;
+}
+.advantages-item:nth-child(2){
+  background: url("/img/illustration-2\ 1.png") no-repeat;
+}
+.advantages-item:last-child{
+  background: url("/img/illustration-3\ 1.png") no-repeat;
+}
+.services-header{
+  font-size: 45px;
+  line-height: 45px;
+}
+.services-subheader,
+.statistic-header{
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.statistic{
+  background: url("/img/nerds_logo.png") no-repeat;
+}
+.statistic-numbers{
+  font-size: 45px;
+  line-height: 64px;
+  font-weight: 700;
+}
+.statistic-numbers sup{
+  font-size: 26px;
+  line-height: 40px;
+}
+.statistic-description{
+  line-height: 18px;
+}
+.contacts-header{
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+.cta-header{
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 36px;
+}
+.cta-text{
+  line-height: 22px;
+}
+.map{
+  background: url("/img/map.png") no-repeat;
+}
+.page-header h1{
+  text-align: center;
+  font-size: 55px;
+  font-weight: 500;
+  line-height: 55px;
+  background-color: var(--light-gray);
+}
+legend,
+.products-sort{
+  font-size: 18px;
+  line-height: 30px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+#button{
+  background-color: var(--light-gray);
+  width: 250px;
+  height: 50px;
+}
+.product-sort-item{
+  font-size: 14px;
+  line-height: 18px;
+}
+.products-item-header h3{
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 30px;
+  color:var(--black)
+}
+.products-item-description{
+  font-size: 16px;
+  line-height: 18px;
+  color: var(--lead-grey);
+}
+.modal-window{
+  background-color: var(--light-gray);
+  text-align: center;
+}
+label{
+  font-size: 16px;
+  line-height: 20px;
+  color: var(--graylish-blue);
+}
+fieldset{
+  border: none;
+}
+.min-price,
+.max-price{
+  text-transform: uppercase;
+  line-height: 22px;
+  color: var(--graylish-blue);
+}
+input[type="text"]{
+  border: none;
+  background-color: var(--light-gray);
+  text-align: center;
+}
+
