@@ -12,42 +12,46 @@
 
 <body>
   <header class="main-header">
-    <nav class="main-navigation">
-      <div clas="main-header-logo">
-        <a href="#">
-          <img src="/img/main-logo.png" width="160" height="65" alt="Главный логотип">
-        </a>
-      </div>
-      <ul class="site-navigation">
-        <li><a href="index.html">Студия</a></li>
-        <li><a href="#">Клиенты</a></li>
-        <li><a class="active" href="#">Магазин</a></li>
-        <li><a href="#">Контакты</a></li>
-      </ul>
-      <div class="cart">
-        <a href="#">Корзина</a>
-      </div>
-    </nav>
+    <div class="main-navigation-wrapper">
+      <nav class="main-navigation">
+        <div class="main-header-logo">
+          <a href="#">
+            <img src="img/main-logo.png" width="160" height="65" alt="Главный логотип">
+          </a>
+        </div>
+
+        <ul class="site-navigation">
+          <li><a href="#">Студия</a></li>
+          <li><a href="#">Клиенты</a></li>
+          <li><a href="catalog.html">Магазин</a></li>
+          <li><a href="#">Контакты</a></li>
+        </ul>
+        <div class="cart">
+          <a href="#">Корзина</a>
+        </div>
+      </nav>
+    </div>
+    <div class="page-header container">
+      <h1>Магазин готовых шаблонов</h1>
+    </div>
   </header>
 
   <main class="container">
-    <div class="page-header">
-      <h1>Магазин готовых шаблонов</h1>
-    </div>
-    <form action="https://echo.htmlacademy.ru" method="post">
-      <fieldset>
-        <legend>Стоимость:</legend>
-        <input type="range" id="price" name="price"
+    <div class="inner-page">
+    <form class="main-filter" action="https://echo.htmlacademy.ru" method="post">
+      <fieldset class="price-filter">
+        <legend class="price-filter-header">Стоимость:</legend>
+        <input type="range" name="price"
          min="0" max="150000"><br>
         <label class="min-price" for="min_price">
           От <input type="text" name="min_price" id="min_price" value="0">
         </label>
         <label class="max-price" for="max_price">
-          До <input type="text" name="max_price" id="max_price" value="150000">
+          До <input type="text" name="max_price" id="max_price" value="150 000">
         </label>
       </fieldset>
 
-      <fieldset>
+      <fieldset class="grid-filter">
         <legend>Сетка:</legend>
         <ul class="grid-list">
           <li class="grid-item">
@@ -71,7 +75,7 @@
         </ul>
       </fieldset>
 
-      <fieldset>
+      <fieldset class="features-filter">
         <legend>Особенности:</legend>
        <ul class="features-list">
           <li class="features-item">
@@ -106,113 +110,116 @@
           </li>
         </ul>
       </fieldset>
-      <input id="button" type="submit" value="Показать">
+      <input  class="button button-grey submit" type="submit" value="Показать">
     </form>
 
     <section class="products">
-      <h2>Товары</h2>
-      <p class="products-sort">Сортировать:</p>
-      <ul class="product-sort-list">
-        <li class="product-sort-item">
+      <h2 style="display: none;">Товары</h2>
+      <div class="products-grid">
+      <p class="products-sort-header">Сортировать:</p>
+      <ul class="products-sort-list">
+        <li class="products-sort-item">
           <a href="#">По цене</a>
         </li>
-        <li class="product-sort-item">
+        <li class="products-sort-item">
           <a href="#">По типу</a>
         </li>
-        <li class="product-sort-item">
+        <li class="products-sort-item">
           <a href="#">По названию</a>
         </li>
-        <li class="product-sort-item">
-          <a href="#"></a>
+        <li class="products-sort-item">
+          <a href="#">тр</a>
         </li>
-        <li class="product-sort-item">
-          <a href="#"></a>
+        <li class="products-sort-item">
+          <a href="#">тр</a>
         </li>
       </ul>
-
+      </div>
       <ul class="products-list">
         <li class="products-item">
-          <img src="/img/sedona_card.png" width="360" height="580" alt="Шаблон Sedona">
           <div class="modal-window">
             <a class="products-item-header" href="#">
               <h3>Sedona</h3>
             </a>
             <p class="products-item-description">Информационный сайт для туристов</p>
-            <a class="button button-red" href="#">9 900 Р</a>
+            <a class="button button-red button-buy" href="#">9 900 Р</a>
           </div>
+          <img src="/img/sedona_card.png" width="360" height="580" alt="Шаблон Sedona">
         </li>
         <li class="products-item">
-          <img src="/img/pink_logo.png" width="360" height="580" alt="Шаблон PinkApp">
           <div class="modal-window">
             <a class="products-item-header" href="#">
               <h3>Pink app</h3>
             </a>
             <p class="products-item-description">Продуктовый лендинг приложения для iOS и Android</p>
-            <a class="button button-red" href="#">9 900 Р</a>
+            <a class="button button-red button-buy" href="#">9 900 Р</a>
           </div>
+          <img src="/img/pink_logo.png" width="360" height="580" alt="Шаблон PinkApp">
         </li>
         <li class="products-item">
-          <img src="/img/borodinsky_card.png" width="360" height="580" alt="Шаблон Барбершопа">
           <div class="modal-window">
             <a class="products-item-header" href="#">
               <h3>Barbershop</h3>
             </a>
             <p class="products-item-description">Сайт салона красоты. Для мужчин, да.</p>
-            <a class="button button-red" href="#">9 900 Р</a>
+            <a class="button button-red button-buy" href="#">9 900 Р</a>
           </div>
+          <img src="/img/borodinsky_card.png" width="360" height="580" alt="Шаблон Барбершопа">
         </li>
         <li class="products-item">
-          <img src="/img/mishka_card.png" width="360" height="580" alt="Шаблон Мишки">
           <div class="modal-window">
             <a class="products-item-header" href="#">
               <h3>Mishka</h3>
             </a>
             <p class="products-item-description">Интернет-магазин вязаных игрушек</p>
-            <a class="button button-red" href="#">9 900 Р</a>
+            <a class="button button-red button-buy" href="#">9 900 Р</a>
           </div>
+          <img src="/img/mishka_card.png" width="360" height="580" alt="Шаблон Мишки">
         </li>
         <li class="products-item">
-          <img src="/img/aplus_card.png" width="360" height="580" alt="Шаблон A plus">
           <div class="modal-window">
             <a class="products-item-header" href="#">
               <h3>A plus</h3>
             </a>
             <p class="products-item-description">Лендинг курсов повышения квалификации</p>
-            <a class="button button-red" href="#">9 900 Р</a>
+            <a class="button button-red button-buy" href="#">9 900 Р</a>
           </div>
+          <img src="/img/aplus_card.png" width="360" height="580" alt="Шаблон A plus">
         </li>
         <li class="products-item">
-          <img src="/img/kvast_card.png" width="360" height="580" alt="Шаблон магазина кваса">
           <div class="modal-window">
             <a class="products-item-header" href="#">
               <h3>Кваст</h3>
             </a>
             <p class="products-item-description">Промо-сайт производителя крафтового кваса</p>
-            <a class="button button-red" href="#">9 900 Р</a>
+            <a class="button button-red button-buy" href="#">9 900 Р</a>
           </div>
+          <img src="/img/kvast_card.png" width="360" height="580" alt="Шаблон магазина кваса">
         </li>
       </ul>
       <ul class="pagination">
-        <li class="pagination-item"><a class="button button-grey" href="#">1</a></li>
-        <li class="pagination-item"><a class="button button-grey" href="#">2</a></li>
-        <li class="pagination-item"><a class="button button-grey" href="#">3</a></li>
-        <li class="pagination-item"><a class="button button-grey" href="#">Следующая</a></li>
+        <li class="pagination-item"><a class="button button-grey button-pagination" href="#">1</a></li>
+        <li class="pagination-item"><a class="button button-grey button-pagination" href="#">2</a></li>
+        <li class="pagination-item"><a class="button button-grey button-pagination" href="#">3</a></li>
+        <li class="pagination-item"><a class="button button-grey button-next" href="#">Следующая</a></li>
       </ul>
     </section>
+  </div>
 
+  <section class="map">
+    mack
+  </section>
 
-    <section class="contacts">
-      <h2>Контакты</h2>
+  <section class="contacts">
+    <h2 style="display: none;">Контакты</h2>
+    <div class="contacts-wrapper">
       <p class="contacts-header">Nёrds design studio</p>
       <p>наб. реки Карповки<br>
-      5 лит П, Санкт-Петербург</p>
-      <a class="contacts-phone" href="tel:+78005558628">+7 899 555-86-28</a>
+         5 лит П, Санкт-Петербург</p>
+      <a class="contacts-phone" href="tel:+78005558628">+7 899 555-86-28</a><br><br><br>
       <a class="button button-red" href="#">Напишите нам</a>
-    </section>
-
-    <section class="map">
-      mack
-    </section>
+  </div>
+  </section>
 
   </main>
   <section>
@@ -232,16 +239,20 @@
 
   </section>
   <footer class="main-footer">
-    <section class="social-media">
-      <h2>Социальные сети</h2>
-      <ul class="social-media-list">
-        <li class="social-media-item"><a href="#">VK</a></li>
-        <li class="social-media-item"><a href="#">FB</a></li>
-        <li class="social-media-item"><a href="#">INST</a></li>
-      </ul>
-      <p class="cta-header">Давайте дружить, это выгодно!</p>
-      <p class="cta-text">Скидка 10% для друзей из социальных сетей.</p>
-    </section>
+    <div class="container">
+      <section class="social-media">
+        <h2 style="display: none">сети</h2>
+        <ul class="social-media-list">
+          <li class="social-media-item"><a href="#">VK</a></li>
+          <li class="social-media-item"><a href="#">FB</a></li>
+          <li class="social-media-item"><a href="#">INST</a></li>
+        </ul>
+        <div class="cta-wrapper">
+          <p class="cta-header">Давайте дружить, это выгодно!</p>
+          <p class="cta-text">Скидка 10% для друзей из социальных сетей.</p>
+        </div>
+      </section>
+    </div>
   </footer>
 </body>
 
