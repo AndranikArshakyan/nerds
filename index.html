@@ -19,7 +19,7 @@
             </a>
           </div>
           <ul class="site-navigation">
-            <li class="site-navigation-item"><a href="#">Студия</a></li>
+            <li class="site-navigation-item nav-active-item"><a href="#">Студия</a></li>
             <li class="site-navigation-item"><a href="#">Клиенты</a></li>
             <li class="site-navigation-item"><a href="catalog.html">Магазин</a></li>
             <li class="site-navigation-item"><a href="#">Контакты</a></li>
@@ -34,17 +34,17 @@
       <h1 class="visually-hidden">Интернет-магазин Nerds</h1>
       <div class="slider-bg">
         <section class="slider container">
-          <div class="slider-item">
+          <div class="slider-item slider-current">
             <p class="slider-item-header">
               Долго, дорого,<br>
-              скурпулезно.</p>
+              скрупулезно.</p>
             <p class="slider-item-description">
               Математически выверенный дизайн<br>
               для вашего сайта или мобильного приложения.
             </p>
             <a class="button button-red" href="#"><span class="button-text">Узнать больше</span></a>
           </div>
-          <div class="slider-item visually-hidden">
+          <div class="slider-item">
             <p class="slider-item-header">
               Любим математику,<br>
               как никто другой</p>
@@ -54,7 +54,7 @@
             </p>
             <a class="button button-red" href="#"><span class="button-text">Узнать больше</span></a>
           </div>
-          <div class="slider-item visually-hidden">
+          <div class="slider-item">
             <p class="slider-item-header">
               Только ночь,<br>
               только хардкор</p>
@@ -63,6 +63,11 @@
               <br>Ближе к полуночи работа только начинается.
             </p>
             <a class="button button-red" href="#"><span class="button-text">Узнать больше</span></a>
+          </div>
+          <div class="slider-controls">
+            <button type="button" class="button-current" aria-label="Первый слайд"></button>
+            <button type="button" aria-label="Второй слайд"></button>
+            <button type="button" aria-label="Третий слайд"></button>
           </div>
         </section>
       </div>
@@ -154,13 +159,18 @@
       </div>
 
       <section class="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4749.1424371776275!2d30.31252078883977!3d59.96916473088871!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696315bc4e8ce61%3A0xe703c377f3424272!2sStudio%20212!5e0!3m2!1sru!2sru!4v1643739726532!5m2!1sru!2sru"
+         width="100%" height="416" style="border:0;" allowfullscreen="" loading="lazy" title="Офис компании
+          по адресу набережная реки
+          Карповки, 5, литера П, Санкт-Петербург"></iframe>
+        <h2 class="visually-hidden">Как до нас добраться</h2>
         <section class="contacts">
           <h2 class="visually-hidden">Контакты</h2>
           <div class="contacts-wrapper">
             <p class="contacts-header">Nёrds design studio</p>
             <p class="contacts-area">наб. реки Карповки<br>
                5 лит П, Санкт-Петербург</p>
-            <a class="contacts-phone" href="tel:+78005558628">+7 899 555-86-28</a>
+            <a class="contacts-phone" href="tel:+78005558628">+7 800 555-86-28</a>
             <p class="contacts-button-wrapper">
               <a class="button button-red" href="#">
                 <span class="button-text">Напишите нам</span>
@@ -171,27 +181,27 @@
       </section>
 
       <div class="container">
-      <section class="contact-us">
-        <form class="contact-us-form" action="https://echo.htmlacademy.ru" method="post">
-          <svg class="modal-close-mark" width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <g opacity="0.3">
-              <path d="M13.3299 10.5005L20.7072 3.12321C21.0963 2.7317 21.0963 2.09952 20.7072 1.70801L19.292 0.291799C18.9005 -0.0972665 18.2683 -0.0972665 17.8768 0.291799L10.4995 7.67009L3.12221 0.2928C2.7307 -0.0962657 2.09852 -0.0962657 1.70701 0.2928L0.291799 1.70801C-0.0972665 2.09952 -0.0972665 2.7317 0.291799 3.12321L7.66909 10.5005L0.291799 17.8778C-0.0972665 18.2693 -0.0972665 18.9015 0.291799 19.293L1.70801 20.7082C2.09952 21.0973 2.7317 21.0973 3.12321 20.7082L10.5005 13.3309L17.8778 20.7082C18.2693 21.0973 18.9015 21.0973 19.293 20.7082L20.7082 19.293C21.0973 18.9015 21.0973 18.2693 20.7082 17.8778L13.3299 10.5005Z" fill="#FB565A"/>
-            </g>
-          </svg>
-          <legend>Напишите нам</legend>
-          <label class="username-label" for="username">Ваше имя:<br>
-            <input type="text" name="username" id="username" placeholder="Имя Фамилия">
-          </label>
-          <label class="email-label" for="email">Ваш email:<br>
-            <input type="email" name="email" id="email" placeholder="email@example.com">
-          </label>
-          <label class="message-label" for="message">Текст письма:<br>
-            <textarea name="message" id="message" cols="80" rows="10" placeholder="В свободной форме"></textarea>
-          </label>
-          <input class="button submit button-red" type="submit" value="Отправить">
-        </form>
-      </section>
-    </div>
+        <section class="contact-us">
+          <form class="contact-us-form" action="https://echo.htmlacademy.ru" method="post">
+            <svg class="modal-close-mark" width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g opacity="0.3">
+                <path d="M13.3299 10.5005L20.7072 3.12321C21.0963 2.7317 21.0963 2.09952 20.7072 1.70801L19.292 0.291799C18.9005 -0.0972665 18.2683 -0.0972665 17.8768 0.291799L10.4995 7.67009L3.12221 0.2928C2.7307 -0.0962657 2.09852 -0.0962657 1.70701 0.2928L0.291799 1.70801C-0.0972665 2.09952 -0.0972665 2.7317 0.291799 3.12321L7.66909 10.5005L0.291799 17.8778C-0.0972665 18.2693 -0.0972665 18.9015 0.291799 19.293L1.70801 20.7082C2.09952 21.0973 2.7317 21.0973 3.12321 20.7082L10.5005 13.3309L17.8778 20.7082C18.2693 21.0973 18.9015 21.0973 19.293 20.7082L20.7082 19.293C21.0973 18.9015 21.0973 18.2693 20.7082 17.8778L13.3299 10.5005Z" fill="#FB565A"/>
+              </g>
+            </svg>
+            <legend>Напишите нам</legend>
+            <label class="username-label" for="username">Ваше имя:<br>
+              <input type="text" name="username" id="username" placeholder="Имя Фамилия">
+            </label>
+            <label class="email-label" for="email">Ваш email:<br>
+              <input type="email" name="email" id="email" placeholder="email@example.com">
+            </label>
+            <label class="message-label" for="message">Текст письма:<br>
+              <textarea name="message" id="message" cols="80" rows="10" placeholder="В свободной форме"></textarea>
+            </label>
+            <input class="button submit button-red" type="submit" value="Отправить">
+          </form>
+        </section>
+      </div>
     </main>
 
     <footer class="main-footer">
@@ -200,6 +210,7 @@
           <h2 class="visually-hidden">Социальные сети</h2>
           <ul class="social-media-list">
             <li class="social-media-item">
+              <span class="visually-hidden">Вконтакте</span>
               <a href="#">
                 <svg  class="svg" width="81" height="81" viewBox="0 0 81 81" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path class="svg-bg" fill-rule="evenodd" clip-rule="evenodd" d="M40.6616 1.2116C62.2692 1.2116 79.7856 18.7282 79.7856 40.336C79.7856 61.9432 62.2692 79.4597 40.6616 79.4597C19.0541 79.4597 1.53754 61.9432 1.53754 40.336C1.53754 18.7282 19.0541 1.2116 40.6616 1.2116Z" fill="#E1E1E1"/>
@@ -208,6 +219,7 @@
               </a>
             </li>
             <li class="social-media-item">
+              <span class="visually-hidden">Фейсбук</span>
               <a href="#">
                 <svg class="svg" width="81" height="81" viewBox="0 0 81 81" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path class="svg-bg" fill-rule="evenodd" clip-rule="evenodd" d="M40.6617 1.2116C62.2692 1.2116 79.7856 18.7282 79.7856 40.336C79.7856 61.9432 62.2692 79.4597 40.6617 79.4597C19.054 79.4597 1.53754 61.9432 1.53754 40.336C1.53754 18.7282 19.054 1.2116 40.6617 1.2116Z" fill="#E1E1E1"/>
@@ -216,6 +228,7 @@
               </a>
           </li>
             <li class="social-media-item">
+              <span class="visually-hidden">Инстаграм</span>
               <a href="#">
                 <svg class="svg" width="81" height="81" viewBox="0 0 81 81" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path class="svg-bg" fill-rule="evenodd" clip-rule="evenodd" d="M40.6617 1.2116C62.2692 1.2116 79.7856 18.7282 79.7856 40.336C79.7856 61.9432 62.2692 79.4597 40.6617 79.4597C19.054 79.4597 1.53754 61.9432 1.53754 40.336C1.53754 18.7282 19.054 1.2116 40.6617 1.2116Z" fill="#E1E1E1"/>
