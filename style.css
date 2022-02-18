@@ -178,7 +178,7 @@ iframe{
 .slider-item:nth-child(2){
   background: url(img/slider2_back.png) 100% 0  no-repeat;
 }
-.slider-item:last-child{
+.slider-item:nth-child(3){
   background: url(img/slider3_back.png) 100% 0  no-repeat;
 }
 
@@ -232,7 +232,7 @@ li{
 .button{
  padding: 17px 40px 15px 39px;
  border-radius: 3px;
- 
+
 }
 .button-position{
   vertical-align: bottom;
@@ -373,7 +373,7 @@ li{
 }
 .statistic{
   background: url("img/nerds_logo.png") no-repeat;
-  
+
 }
 .index-columns{
   display: -ms-grid;
@@ -1084,4 +1084,24 @@ textarea{
 .grid-item-radio:hover + label::before,
 .grid-item-radio:hover + label::after{
   opacity: 1;
+}
+
+
+@keyframes form-show{
+  from {
+    bottom: 0%;
+  }
+  50% {
+    bottom: 60%;
+  }
+  to {
+    bottom: 50%;
+  }
+}
+.contact-us{
+  animation-name: form-show;
+  animation-duration: 0.5s;
+}
+input:invalid{
+  color: var(--soft-red-dark);
 }
