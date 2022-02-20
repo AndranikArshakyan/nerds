@@ -1,6 +1,3 @@
-
-
-
 /*add fonts*/
 
 
@@ -1087,6 +1084,19 @@ textarea{
 }
 
 
+@-webkit-keyframes form-show{
+  from {
+    bottom: 0%;
+  }
+  50% {
+    bottom: 60%;
+  }
+  to {
+    bottom: 50%;
+  }
+}
+
+
 @keyframes form-show{
   from {
     bottom: 0%;
@@ -1099,8 +1109,10 @@ textarea{
   }
 }
 .contact-us{
-  animation-name: form-show;
-  animation-duration: 0.5s;
+  -webkit-animation-name: form-show;
+          animation-name: form-show;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
 }
 input:invalid{
   color: var(--soft-red-dark);
